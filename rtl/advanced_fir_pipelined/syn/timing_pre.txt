@@ -1,0 +1,40 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Changed wire load model for 'alt1' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to '5K_hvratio_1_1'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myadvfir
+Version: S-2021.06-SP4
+Date   : Fri Nov 10 21:30:22 2023
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: output_reg_0/Dout_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: DOUT3k[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myadvfir           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  output_reg_0/Dout_reg[7]/clocked_on (**SEQGEN**)        0.00       0.00 r
+  output_reg_0/Dout_reg[7]/Q (**SEQGEN**)                 0.00       0.00 r
+  output_reg_0/Dout[7] (my_reg_nbits8_2)                  0.00       0.00 r
+  DOUT3k[7] (out)                                         0.00       0.00 r
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

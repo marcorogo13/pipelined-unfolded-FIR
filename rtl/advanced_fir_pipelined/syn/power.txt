@@ -1,0 +1,4 @@
+Error: unknown option '-unit' (CMD-010)
+Error: extra positional option 'ps' (CMD-012)
+Error: unknown option '-scale' (CMD-010)
+Error: extra positional option '1' (CMD-012)

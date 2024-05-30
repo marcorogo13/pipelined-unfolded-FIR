@@ -1,0 +1,104 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myadvfir
+Version: S-2021.06-SP4
+Date   : Mon Nov  6 21:12:39 2023
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B7[1] (input port clocked by MY_CLK)
+  Endpoint: output_reg_1/Dout_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myadvfir           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  B7[1] (in)                                              0.00       0.50 f
+  br2_b7/B[1] (my_mult_nbits8_14)                         0.00       0.50 f
+  br2_b7/mult_20/b[1] (my_mult_nbits8_14_DW_mult_tc_0_DW_mult_tc_21)
+                                                          0.00       0.50 f
+  br2_b7/mult_20/U173/ZN (INV_X1)                         0.05       0.55 r
+  br2_b7/mult_20/U190/Z (XOR2_X1)                         0.08       0.63 r
+  br2_b7/mult_20/U187/ZN (OAI22_X1)                       0.05       0.68 f
+  br2_b7/mult_20/U37/S (HA_X1)                            0.08       0.75 f
+  br2_b7/mult_20/U171/ZN (INV_X1)                         0.03       0.78 r
+  br2_b7/mult_20/U200/ZN (OAI222_X1)                      0.06       0.84 f
+  br2_b7/mult_20/U199/ZN (AOI222_X1)                      0.10       0.94 r
+  br2_b7/mult_20/U160/ZN (INV_X1)                         0.03       0.97 f
+  br2_b7/mult_20/U198/ZN (AOI222_X1)                      0.11       1.07 r
+  br2_b7/mult_20/U197/ZN (OAI222_X1)                      0.07       1.14 f
+  br2_b7/mult_20/U9/CO (FA_X1)                            0.10       1.23 f
+  br2_b7/mult_20/U8/CO (FA_X1)                            0.09       1.33 f
+  br2_b7/mult_20/U7/CO (FA_X1)                            0.09       1.42 f
+  br2_b7/mult_20/U6/CO (FA_X1)                            0.09       1.51 f
+  br2_b7/mult_20/U5/CO (FA_X1)                            0.09       1.60 f
+  br2_b7/mult_20/U4/CO (FA_X1)                            0.09       1.69 f
+  br2_b7/mult_20/U3/CO (FA_X1)                            0.09       1.78 f
+  br2_b7/mult_20/U180/Z (XOR2_X1)                         0.07       1.85 f
+  br2_b7/mult_20/U179/ZN (XNOR2_X1)                       0.06       1.91 f
+  br2_b7/mult_20/product[14] (my_mult_nbits8_14_DW_mult_tc_0_DW_mult_tc_21)
+                                                          0.00       1.91 f
+  br2_b7/X[7] (my_mult_nbits8_14)                         0.00       1.91 f
+  br2_a7/A[7] (my_adder_nbits8_13)                        0.00       1.91 f
+  br2_a7/add_19/A[7] (my_adder_nbits8_13_DW01_add_0_DW01_add_13)
+                                                          0.00       1.91 f
+  br2_a7/add_19/U1_7/S (FA_X1)                            0.13       2.04 f
+  br2_a7/add_19/SUM[7] (my_adder_nbits8_13_DW01_add_0_DW01_add_13)
+                                                          0.00       2.04 f
+  br2_a7/S[7] (my_adder_nbits8_13)                        0.00       2.04 f
+  br2_a8/B[7] (my_adder_nbits8_12)                        0.00       2.04 f
+  br2_a8/add_19/B[7] (my_adder_nbits8_12_DW01_add_0_DW01_add_12)
+                                                          0.00       2.04 f
+  br2_a8/add_19/U1_7/S (FA_X1)                            0.15       2.19 r
+  br2_a8/add_19/SUM[7] (my_adder_nbits8_12_DW01_add_0_DW01_add_12)
+                                                          0.00       2.19 r
+  br2_a8/S[7] (my_adder_nbits8_12)                        0.00       2.19 r
+  br2_a9/B[7] (my_adder_nbits8_11)                        0.00       2.19 r
+  br2_a9/add_19/B[7] (my_adder_nbits8_11_DW01_add_0_DW01_add_11)
+                                                          0.00       2.19 r
+  br2_a9/add_19/U1_7/S (FA_X1)                            0.12       2.31 f
+  br2_a9/add_19/SUM[7] (my_adder_nbits8_11_DW01_add_0_DW01_add_11)
+                                                          0.00       2.31 f
+  br2_a9/S[7] (my_adder_nbits8_11)                        0.00       2.31 f
+  br2_a10/B[7] (my_adder_nbits8_10)                       0.00       2.31 f
+  br2_a10/add_19/B[7] (my_adder_nbits8_10_DW01_add_0_DW01_add_10)
+                                                          0.00       2.31 f
+  br2_a10/add_19/U1_7/S (FA_X1)                           0.15       2.46 r
+  br2_a10/add_19/SUM[7] (my_adder_nbits8_10_DW01_add_0_DW01_add_10)
+                                                          0.00       2.46 r
+  br2_a10/S[7] (my_adder_nbits8_10)                       0.00       2.46 r
+  output_reg_1/Din[7] (my_reg_nbits8_1)                   0.00       2.46 r
+  output_reg_1/U3/ZN (NAND2_X1)                           0.03       2.48 f
+  output_reg_1/U2/ZN (OAI21_X1)                           0.03       2.51 r
+  output_reg_1/Dout_reg[7]/D (DFFR_X1)                    0.01       2.52 r
+  data arrival time                                                  2.52
+
+  clock MY_CLK (rise edge)                                4.80       4.80
+  clock network delay (ideal)                             0.00       4.80
+  clock uncertainty                                      -0.07       4.73
+  output_reg_1/Dout_reg[7]/CK (DFFR_X1)                   0.00       4.73 r
+  library setup time                                     -0.03       4.70
+  data required time                                                 4.70
+  --------------------------------------------------------------------------
+  data required time                                                 4.70
+  data arrival time                                                 -2.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.18
+
+
+1

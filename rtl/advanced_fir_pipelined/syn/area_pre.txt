@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : myadvfir
+Version: S-2021.06-SP4
+Date   : Fri Nov 10 21:30:22 2023
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/gtech.db)
+
+Number of ports:                         5816
+Number of nets:                         14286
+Number of cells:                         6526
+Number of combinational cells:           5981
+Number of sequential cells:               228
+Number of macros/black boxes:               0
+Number of buf/inv:                        626
+Number of references:                      95
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1

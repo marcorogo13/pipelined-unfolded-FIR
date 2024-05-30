@@ -1,0 +1,1 @@
+/home/isa28_2023_2024/Githi/Integrated-Systems-Architecture/Lab1/rtl/fir/netlist/myfirmodified.sdc
